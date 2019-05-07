@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My first touhou game demo</title>
+    <style media="screen">
+        canvas {
+            border: 1px black solid;
+            background: black;
+        }
+
+        body {
+            background-image: url("source/image/background.jpg");
+            background-position: center;
+        }
+
+    </style>
+    <script src="script/util.js"></script>
+    <script src="script/things.js"></script>
+    <script src="script/scene.js"></script>
+</head>
+<body>
+
+<div>
+    <canvas id="id-canvas" width="500" height="600"></canvas>
+    <!--血条-->
+    <div id="HP" style="background: yellowgreen;width: 500px;">
+        <p id="HPNum">HP:</p>
+    </div>
+     <!--法力值-->
+    <div id="MP" style="background: cornflowerblue;width: 500px;">
+        <p id="MPNum">MP:</p>
+    </div>
+</div>
+
+
+<script src="script/game.js"></script>
+</body>
+</html>
